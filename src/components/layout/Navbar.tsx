@@ -9,7 +9,7 @@ const Navbar: React.FC = () => {
   const { currentUser } = useSelector((state: RootState) => state.user);
 
   return (
-    <nav className="bg-indigo-600 text-white shadow-lg">
+    <nav className="bg-red-600 text-white shadow-lg">
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center space-x-4">
@@ -21,7 +21,7 @@ const Navbar: React.FC = () => {
               <span className="font-bold text-xl">DSA Master</span>
             </button>
           </div>
-          
+
           <div className="flex items-center space-x-6">
             <button
               onClick={() => navigate('/')}
@@ -54,7 +54,7 @@ const Navbar: React.FC = () => {
               <HelpCircle className="w-5 h-5" />
               <span>Quizzes</span>
             </button>
-            
+
             <button
               onClick={() => navigate('/leaderboard')}
               className="flex items-center space-x-2 hover:text-indigo-200"
