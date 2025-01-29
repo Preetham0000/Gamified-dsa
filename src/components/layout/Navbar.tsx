@@ -20,7 +20,7 @@ const Navbar: React.FC = () => {
               <BookOpen className="w-8 h-8" />
               <span className="font-bold text-xl">DSA Master</span>
             </button>
-          </div>
+          </div>~
 
           <div className="flex items-center space-x-6">
             <button
