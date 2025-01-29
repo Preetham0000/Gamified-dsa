@@ -1,40 +1,58 @@
+/**
+ * BasicAlgorithmsPage Component
+ * 
+ * A landing page component that introduces basic algorithms concepts and
+ * provides navigation to related learning resources like quizzes and practice problems.
+ * 
+ * Features:
+ * - Overview of common algorithms
+ * - Links to quizzes and practice problems
+ * - Responsive layout with maximum width constraint
+ */
 import React from 'react';
 
-const ArraysPage = () => {
+const BasicAlgorithmsPage = () => {
   return (
+    // Main container with responsive max width and padding
     <div className="max-w-7xl mx-auto px-4 py-8">
-      <h1 className="text-3xl font-bold text-gray-900 mb-6">Arrays</h1>
+      {/* Page title */}
+      <h1 className="text-3xl font-bold text-gray-900 mb-6">Basic Algorithms</h1>
+      
+      {/* Introduction paragraph */}
       <p className="text-gray-700 mb-4">
-        Arrays are a fundamental data structure used to store a collection of elements. They are used in various algorithms and data structures.
+        Basic algorithms are essential for understanding data structures and algorithms. They form the foundation for more advanced concepts.
       </p>
-      <h2 className="text-2xl font-bold text-gray-900 mb-4">Features of Arrays</h2>
+      
+      {/* Common Algorithms section */}
+      <h2 className="text-2xl font-bold text-gray-900 mb-4">Common Algorithms</h2>
+      {/* List of fundamental algorithm categories */}
       <ul className="list-disc list-inside mb-4">
-        <li>Fixed size</li>
-        <li>Random access</li>
-        <li>Efficient indexing</li>
-        <li>Efficient iteration</li>
-        <li>Memory locality</li>
+        <li>Sorting Algorithms (Bubble Sort, Merge Sort, Quick Sort, etc.)</li>
+        <li>Searching Algorithms (Linear Search, Binary Search, etc.)</li>
+        <li>Recursion</li>
+        <li>Dynamic Programming</li>
+        <li>Greedy Algorithms</li>
       </ul>
-      <h2 className="text-2xl font-bold text-gray-900 mb-4">Array Operations</h2>
-      <ul className="list-disc list-inside mb-4">
-        <li>Traversal</li>
-        <li>Insertion</li>
-        <li>Deletion</li>
-        <li>Searching</li>
-        <li>Sorting</li>
-      </ul>
+      
+      {/* Quiz section with navigation link */}
       <h2 className="text-2xl font-bold text-gray-900 mb-4">Quiz</h2>
       <p className="text-gray-700 mb-4">
-        Test your knowledge about arrays by taking the quiz.
+        Test your knowledge about basic algorithms by taking the quiz.
       </p>
-      <a href="/quiz/arrays" className="text-indigo-600 hover:underline">Take the Quiz</a>
+      <a href="/quiz/algorithms" className="text-indigo-600 hover:underline">
+        Take the Quiz
+      </a>
+      
+      {/* Practice Problems section with navigation link */}
       <h2 className="text-2xl font-bold text-gray-900 mb-4 mt-6">Problems</h2>
       <p className="text-gray-700 mb-4">
-        Practice solving problems related to arrays.
+        Practice solving problems related to basic algorithms.
       </p>
-      <a href="/problems/arrays" className="text-indigo-600 hover:underline">Solve Problems</a>
+      <a href="/problems/algorithms" className="text-indigo-600 hover:underline">
+        Solve Problems
+      </a>
     </div>
   );
 };
 
-export default ArraysPage;
+export default BasicAlgorithmsPage;

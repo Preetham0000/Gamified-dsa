@@ -1,10 +1,11 @@
-import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
+import { defineConfig } from 'vite'; // Import Vite's configuration function
+import react from '@vitejs/plugin-react'; // Import the React plugin for Vite
 
 // https://vitejs.dev/config/
+// Export the Vite configuration
 export default defineConfig({
-  plugins: [react()],
+  plugins: [react()], // Enables React support in Vite
   optimizeDeps: {
-    exclude: ['lucide-react'],
+    exclude: ['lucide-react'], // Prevents 'lucide-react' from being pre-bundled by Vite
   },
 });
