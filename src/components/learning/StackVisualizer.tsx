@@ -105,7 +105,7 @@ class Stack:
         <button
           onClick={handlePop}
           className="flex items-center space-x-2 px-4 py-2 bg-red-500 text-white rounded-md hover:bg-red-600"
-          disabled={stack.length === 0}
+          // disabled={stack.length === 0}
         >
           <ArrowUp className="w-5 h-5" />
           <span>Pop</span>

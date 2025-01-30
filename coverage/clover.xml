@@ -1,24 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1738209951313" clover="3.2.0">
-  <project timestamp="1738209951313" name="All files">
-    <metrics statements="15" coveredstatements="15" conditionals="1" coveredconditionals="1" methods="5" coveredmethods="5" elements="21" coveredelements="21" complexity="0" loc="15" ncloc="15" packages="1" files="1" classes="1"/>
-    <file name="QuizTimer.tsx" path="C:\Users\Rayaan Somaiah\Desktop\Gamified-dsa\src\components\quiz\QuizTimer.tsx">
-      <metrics statements="15" coveredstatements="15" conditionals="1" coveredconditionals="1" methods="5" coveredmethods="5"/>
+<coverage generated="1738218075485" clover="3.2.0">
+  <project timestamp="1738218075485" name="All files">
+    <metrics statements="35" coveredstatements="35" conditionals="16" coveredconditionals="16" methods="6" coveredmethods="6" elements="57" coveredelements="57" complexity="0" loc="35" ncloc="35" packages="1" files="1" classes="1"/>
+    <file name="StackVisualizer.tsx" path="C:\Users\Rayaan Somaiah\Desktop\Gamified-dsa\src\components\learning\StackVisualizer.tsx">
+      <metrics statements="35" coveredstatements="35" conditionals="16" coveredconditionals="16" methods="6" coveredmethods="6"/>
       <line num="1" count="1" type="stmt"/>
       <line num="2" count="1" type="stmt"/>
       <line num="9" count="1" type="stmt"/>
-      <line num="10" count="3" type="stmt"/>
-      <line num="12" count="3" type="stmt"/>
-      <line num="13" count="3" type="cond" truecount="1" falsecount="0"/>
-      <line num="14" count="1" type="stmt"/>
-      <line num="15" count="1" type="stmt"/>
-      <line num="18" count="2" type="stmt"/>
-      <line num="19" count="5" type="stmt"/>
-      <line num="22" count="2" type="stmt"/>
-      <line num="25" count="3" type="stmt"/>
-      <line num="26" count="3" type="stmt"/>
+      <line num="10" count="18" type="stmt"/>
+      <line num="11" count="18" type="stmt"/>
+      <line num="12" count="18" type="stmt"/>
+      <line num="13" count="18" type="stmt"/>
+      <line num="15" count="18" type="stmt"/>
+      <line num="16" count="4" type="stmt"/>
+      <line num="17" count="4" type="cond" truecount="1" falsecount="0"/>
+      <line num="18" count="4" type="cond" truecount="4" falsecount="0"/>
+      <line num="19" count="1" type="stmt"/>
+      <line num="21" count="3" type="stmt"/>
+      <line num="22" count="3" type="stmt"/>
+      <line num="27" count="3" type="stmt"/>
       <line num="28" count="3" type="stmt"/>
+      <line num="33" count="18" type="stmt"/>
+      <line num="34" count="2" type="cond" truecount="2" falsecount="0"/>
+      <line num="35" count="1" type="stmt"/>
+      <line num="37" count="1" type="stmt"/>
       <line num="38" count="1" type="stmt"/>
+      <line num="39" count="1" type="stmt"/>
+      <line num="40" count="1" type="stmt"/>
+      <line num="44" count="1" type="stmt"/>
+      <line num="48" count="18" type="stmt"/>
+      <line num="49" count="2" type="stmt"/>
+      <line num="50" count="2" type="cond" truecount="3" falsecount="0"/>
+      <line num="51" count="2" type="stmt"/>
+      <line num="52" count="2" type="stmt"/>
+      <line num="53" count="2" type="stmt"/>
+      <line num="57" count="18" type="stmt"/>
+      <line num="84" count="18" type="stmt"/>
+      <line num="92" count="4" type="stmt"/>
+      <line num="133" count="5" type="stmt"/>
+      <line num="156" count="1" type="stmt"/>
     </file>
   </project>
 </coverage>
