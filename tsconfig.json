@@ -1,6 +1,8 @@
 {
   "compilerOptions": {
     // ... other compiler options
+    "module": "esnext",
+    "target": "esnext",
     "jsx": "react", // Or "react-jsx" if using React 17+ with the new JSX transform
     "esModuleInterop": true, // Recommended (see explanation below)
     "moduleResolution": "node" // Ensure module resolution is set to node
