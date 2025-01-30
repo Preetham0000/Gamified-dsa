@@ -1,7 +1,7 @@
 // filepath: /c:/Users/prh36/OneDrive/Desktop/Gamified dsa/server/config/db.js
 import mongoose from 'mongoose';
 import dotenv from 'dotenv';
-
+// import
 dotenv.config();
 
 const connectDB = async () => {
