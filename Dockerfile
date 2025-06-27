@@ -17,4 +17,4 @@ COPY . .
 EXPOSE 5000
 
 # Run the app
-CMD ["npm", "run", "server"]
+CMD ["npm", "run", "dev"]
