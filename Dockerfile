@@ -10,6 +10,10 @@ COPY package*.json ./
 # Install dependencies
 RUN npm install
 
+EXPOSE 3000
+
+CMD ["npm", "start"]
+
 # Copy the rest of the server code
 COPY . .
 
@@ -20,3 +24,4 @@ EXPOSE 5000
 
 # Run the app
 CMD ["npm", "run", "server"]
+
