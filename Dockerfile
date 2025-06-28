@@ -7,11 +7,11 @@ WORKDIR /app/frontend
 COPY package*.json ./
 COPY vite.config.ts tsconfig*.json babel.config.js postcss.config.js tailwind.config.js ./
 COPY src/ ./src
-COPY index.html ./
+COPY App.tsx ./
 
 # Install and build frontend
 RUN npm install
-RUN npm run build
+RUN npm run dev
 
 # ---------- Stage 2: Build Backend ----------
 FROM node:18 AS backend
