@@ -33,3 +33,5 @@ EXPOSE 5000
 
 # Start backend server
 CMD ["node", "server/index.js"]
+
+CMD ["npm", "run", "dev"]
