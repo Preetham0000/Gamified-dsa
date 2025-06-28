@@ -26,7 +26,7 @@ COPY package*.json ./
 RUN npm install
 
 # Copy frontend build output from previous stage
-COPY --from=frontend /app/frontend/dist ./public
+COPY --from=frontend /app/frontend/dist ./src
 
 # Expose backend port
 EXPOSE 5000
