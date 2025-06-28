@@ -36,5 +36,5 @@ app.use(express.static(path.join(__dirname, '../src')));
 
 // Fallback to index.html for React Router
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, '../src', 'App.tsx'));
+  res.sendFile(path.join(__dirname, '../src', 'index.html'));
 });
