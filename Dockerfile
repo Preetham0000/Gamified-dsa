@@ -7,7 +7,7 @@ WORKDIR /app/frontend
 COPY package*.json ./
 COPY vite.config.ts tsconfig*.json babel.config.js postcss.config.js tailwind.config.js ./
 COPY src/ ./src
-COPY App.tsx ./
+COPY index.html ./
 
 # Install and build frontend
 RUN npm install
