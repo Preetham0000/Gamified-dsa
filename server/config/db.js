@@ -1,16 +1,27 @@
-// filepath: /c:/Users/prh36/OneDrive/Desktop/Gamified dsa/server/config/db.js
+// filepath: /server/config/db.js
 import mongoose from 'mongoose';
 import dotenv from 'dotenv';
-// import
+
+// Load environment variables from .env
 dotenv.config();
 
 const connectDB = async () => {
   try {
-    const conn = await mongoose.connect(process.env.MONGODB_URI);
-    console.log(`MongoDB Connected: ${conn.connection.host}`);
+    const uri = process.env.MONGODB_URI;
+
+    if (!uri) {
+      throw new Error('MONGODB_URI is not defined in environment variables');
+    }
+
+    const conn = await mongoose.connect(uri, {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+    });
+
+    console.log(`✅ MongoDB Connected: ${conn.connection.host}`);
   } catch (error) {
-    console.error(`Error: ${error.message}`);
-    process.exit(1);
+    console.error(`❌ MongoDB Connection Error: ${error.message}`);
+    process.exit(1); // Exit the process with failure
   }
 };
 
