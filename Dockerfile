@@ -1,27 +1,35 @@
-# Use an official Node.js image
-FROM node:18
+# ---------- Stage 1: Build Frontend ----------
+FROM node:18 AS frontend
 
-# Set working directory inside the container
-WORKDIR /app
+WORKDIR /app/frontend
 
-# Copy package.json and package-lock.json first
+# Copy frontend-related files
 COPY package*.json ./
+COPY vite.config.ts tsconfig*.json babel.config.js postcss.config.js tailwind.config.js ./
+COPY src/ ./src
+COPY index.html ./
 
-# Install dependencies
+# Install and build frontend
 RUN npm install
-
-EXPOSE 3000
-
-CMD ["npm", "start"]
-
-# Copy the rest of the server code
-COPY . .
-
 RUN npm run build
 
-# Expose the port your server runs on (change if different)
+# ---------- Stage 2: Build Backend ----------
+FROM node:18 AS backend
+
+WORKDIR /app
+
+# Copy backend-related files
+COPY server/ ./server
+COPY package*.json ./
+
+# Install backend dependencies
+RUN npm install
+
+# Copy frontend build output from previous stage
+COPY --from=frontend /app/frontend/dist ./public
+
+# Expose backend port
 EXPOSE 5000
 
-# Run the app
-CMD ["npm", "run", "server"]
-
+# Start backend server
+CMD ["node", "server/index.js"]
