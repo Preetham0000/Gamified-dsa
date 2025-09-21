@@ -21,7 +21,6 @@ WORKDIR /app
 # Copy backend files
 COPY server/ ./server
 COPY package*.json ./
-COPY .env ./
 
 # Install backend dependencies
 RUN npm install
